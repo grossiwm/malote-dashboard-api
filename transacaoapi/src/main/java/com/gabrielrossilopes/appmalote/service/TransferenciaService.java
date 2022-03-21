@@ -48,6 +48,10 @@ public class TransferenciaService {
         return transferenciaRepository.save(atualizaTransferencia(transferenciaOptional.get(), transferencia));
     }
 
+    public Long obterQtde() {
+        return transferenciaRepository.count();
+    }
+
     private Transferencia atualizaTransferencia(Transferencia antigo, Transferencia novo) {
         antigo.setValor(novo.getValor());
         antigo.setContaOrigem(novo.getContaOrigem());

@@ -44,4 +44,9 @@ public class EmpresaService {
 	public void removeEmpresa(Empresa empresa) {
 		empresaRepository.delete(empresa);
 	}
+
+	public long obterQtde() {
+		return empresaRepository.count();
+	}
+
 }

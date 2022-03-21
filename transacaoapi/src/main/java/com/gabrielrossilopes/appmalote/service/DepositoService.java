@@ -49,6 +49,10 @@ public class DepositoService {
         return depositoRepository.save(atualizaDeposito(transferenciaOptional.get(), transferencia));
     }
 
+    public Long obterQtde() {
+        return depositoRepository.count();
+    }
+
     private Deposito atualizaDeposito(Deposito antigo, Deposito novo) {
         antigo.setValor(novo.getValor());
         antigo.setCpfBeneficiario(novo.getCpfBeneficiario());

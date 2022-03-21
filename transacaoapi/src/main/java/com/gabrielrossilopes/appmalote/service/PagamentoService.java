@@ -48,6 +48,10 @@ public class PagamentoService {
         return pagamentoRepository.save(atualizaPagamento(transferenciaOptional.get(), pagamento));
     }
 
+    public Long obterQtde() {
+        return pagamentoRepository.count();
+    }
+
     private Pagamento atualizaPagamento(Pagamento antigo, Pagamento novo) {
         antigo.setValor(novo.getValor());
         antigo.setCnpjRecebedor(novo.getCnpjRecebedor());

@@ -43,4 +43,8 @@ public class MaloteService {
         maloteRepository.delete(malote);
     }
 
+    public Long obterQtde() {
+        return maloteRepository.count();
+    }
+
 }

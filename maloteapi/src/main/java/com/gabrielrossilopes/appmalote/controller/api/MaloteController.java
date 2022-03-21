@@ -3,11 +3,12 @@ package com.gabrielrossilopes.appmalote.controller.api;
 import com.gabrielrossilopes.appmalote.model.dominio.Malote;
 import com.gabrielrossilopes.appmalote.service.MaloteService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Optional;
+import java.util.List;
 
 @RestController
 @RequestMapping("/malote")
@@ -16,38 +17,24 @@ public class MaloteController {
     @Autowired
     private MaloteService maloteService;
 
-    @GetMapping
-    public ResponseEntity<?> listar() {
-        return ResponseEntity.ok(maloteService.listar());
+    @GetMapping(value = "/listar")
+    public List<Malote> obterLista() {
+        return maloteService.listar();
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<?> buscar(@PathVariable Long id) {
-        return ResponseEntity.ok(maloteService.getOptionalById(id).orElse(null));
+    @GetMapping(value = "/{idUser}/listar")
+    public List<Malote> obterLista(@PathVariable Long idUser){
+        return maloteService.listarPorUsuario(idUser);
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<?> deletar(@PathVariable Long id) {
-        Optional<Malote> maloteOptional = maloteService.getOptionalById(id);
-        if (maloteOptional.isEmpty())
-            return ResponseEntity.notFound().build();
-        try {
-            maloteService.excluir(maloteOptional.get());
-            return ResponseEntity.noContent().build();
-        } catch (DataIntegrityViolationException e) {
-            return ResponseEntity.status(418).build();
-        }
-
+    @GetMapping(value = "/qtde")
+    public Long obterQtde() {
+        return maloteService.obterQtde();
     }
 
-    @GetMapping("/by-empresa/{id}")
-    public ResponseEntity<?> listarByEmpresa(@PathVariable Long id) {
-        return ResponseEntity.ok(maloteService.listarPorEmpresa(id));
-    }
-
-    @GetMapping("/by-usuario/{id}")
-    public ResponseEntity<?> listarByUsuario(@PathVariable Long id) {
-        return ResponseEntity.ok(maloteService.listarPorUsuario(id));
+    @GetMapping(value = "/{id}/obter")
+    public Malote obterPorId(@PathVariable Long id) {
+        return maloteService.getById(id);
     }
 
 }
