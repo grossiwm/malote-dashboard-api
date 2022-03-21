@@ -15,7 +15,7 @@ import br.edu.infnet.apilog.model.domain.Log;
 import br.edu.infnet.apilog.model.service.LogService;
 
 @RestController
-@RequestMapping("/api/log")
+@RequestMapping("/log")
 public class LogController {
 	
 	@Autowired
