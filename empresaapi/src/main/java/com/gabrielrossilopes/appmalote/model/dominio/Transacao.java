@@ -1,5 +1,6 @@
 package com.gabrielrossilopes.appmalote.model.dominio;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.gabrielrossilopes.appmalote.model.enums.TipoTransacao;
 
 import javax.persistence.*;
@@ -20,6 +21,7 @@ public abstract class Transacao {
 
 	@ManyToOne
 	@JoinColumn(name = "malote_id")
+	@JsonIgnore
 	protected Malote malote;
 
 	public Malote getMalote() {

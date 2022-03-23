@@ -7,6 +7,7 @@ import org.hibernate.annotations.OnDeleteAction;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Entity(name="empresa")
 public class Empresa {
@@ -21,12 +22,18 @@ public class Empresa {
     @Column
 	private String nome;
 
-	@JsonIgnore
-    @Transient
+	@OneToMany(mappedBy = "empresa", targetEntity = Malote.class, cascade = CascadeType.ALL)
 	private List<Malote> malotes;
 
 	@Transient
 	private int quantidadeMalotes;
+
+	@Transient
+	private List<Transacao> transacoes;
+
+	public List<Transacao> getTransacoes() {
+		return this.malotes.stream().flatMap(malote -> malote.getTransacoes().stream()).collect(Collectors.toList());
+	}
 
 	public int getQuantidadeMalotes() {
 		return usuarios.stream().map(Usuario::getQuantidadeMalotes).reduce(0, Integer::sum);
