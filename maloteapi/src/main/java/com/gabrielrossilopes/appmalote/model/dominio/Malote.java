@@ -56,6 +56,12 @@ public class Malote {
 	@JsonIgnore
 	private List<Transacao> transacoes;
 
+	@Transient
+	private int quantidadeTransacoes;
+
+	public int getQuantidadeTransacoes() {
+		return this.transacoes.size();
+	}
 
 	@Column
 	private LocalDateTime data;
