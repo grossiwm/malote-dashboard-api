@@ -20,7 +20,7 @@ public class MaloteService {
     }
 
     public Malote getById(Long id) {
-        return maloteRepository.getById(id);
+        return maloteRepository.findById(id).orElse(null);
     }
 
     public Optional<Malote> getOptionalById(Long id) {
