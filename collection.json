@@ -1,0 +1,1659 @@
+{
+	"info": {
+		"_postman_id": "9d97d474-92c0-459b-a46a-f862a06f58c8",
+		"name": "Sistema de Malote APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LogAPI",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/log/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"log",
+								"listar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8084/log/listar",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"log",
+										"listar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:16:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 16,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:44.329069\"\n    },\n    {\n        \"id\": 15,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:43.984952\"\n    },\n    {\n        \"id\": 14,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:43.641154\"\n    },\n    {\n        \"id\": 13,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:43.299226\"\n    },\n    {\n        \"id\": 10,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:42.182659\"\n    },\n    {\n        \"id\": 9,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:41.136612\"\n    },\n    {\n        \"id\": 7,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:39.146434\"\n    },\n    {\n        \"id\": 2,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:31.60276\"\n    },\n    {\n        \"id\": 1,\n        \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n        \"data\": \"2022-03-31T22:15:30.342354\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "quantidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/log/qtde",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"log",
+								"qtde"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quantidade",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8084/log/qtde",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"log",
+										"qtde"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:17:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "9"
+						}
+					]
+				},
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n    \"data\": \"2022-03-31T22:15:44.329069\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8084/log/incluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"log",
+								"incluir"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"A planilha gerada está disponível no diretório padrão!!!\",\n    \"data\": \"2022-03-31T22:15:44.329069\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8084/log/incluir",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"log",
+										"incluir"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:20:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/log/16/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"log",
+								"16",
+								"excluir"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8084/log/16/excluir",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"log",
+										"16",
+										"excluir"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:22:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "EmpresaAPI",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/empresa/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresa",
+								"listar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "listar",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/empresa/listar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empresa",
+										"listar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:24:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"cnpj\": \"67942949000181\",\n        \"nome\": \"Bairulinhm\",\n        \"malotes\": [],\n        \"quantidadeMalotes\": 0,\n        \"transacoes\": []\n    },\n    {\n        \"id\": 3,\n        \"cnpj\": \"54325282000126\",\n        \"nome\": \"Cjv consultoria\",\n        \"malotes\": [],\n        \"quantidadeMalotes\": 0,\n        \"transacoes\": []\n    },\n    {\n        \"id\": 1,\n        \"cnpj\": \"36178046000142\",\n        \"nome\": \"Ecorp\",\n        \"malotes\": [\n            {\n                \"id\": 1,\n                \"transacoes\": [\n                    {\n                        \"id\": 1,\n                        \"valor\": 12321354,\n                        \"tipoTransacao\": \"DEPOSITO\",\n                        \"cpfBeneficiario\": \"25917576076\",\n                        \"nomeBeneficiario\": \"Fulano da Silva\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"valor\": 889897,\n                        \"tipoTransacao\": \"DEPOSITO\",\n                        \"cpfBeneficiario\": \"17794293049\",\n                        \"nomeBeneficiario\": \"Orlando Silva\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"valor\": 7898090,\n                        \"tipoTransacao\": \"DEPOSITO\",\n                        \"cpfBeneficiario\": \"01777779073\",\n                        \"nomeBeneficiario\": \"Rui da Silva\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"valor\": 89765434,\n                        \"tipoTransacao\": \"DEPOSITO\",\n                        \"cpfBeneficiario\": \"76194308060\",\n                        \"nomeBeneficiario\": \"Rodrigo Rodrigues\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"valor\": 2300,\n                        \"tipoTransacao\": \"PAGAMENTO\",\n                        \"cnpjRecebedor\": \"56529545000144\"\n                    },\n                    {\n                        \"id\": 6,\n                        \"valor\": 177787,\n                        \"tipoTransacao\": \"PAGAMENTO\",\n                        \"cnpjRecebedor\": \"93471399000170\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"valor\": 8809787,\n                        \"tipoTransacao\": \"PAGAMENTO\",\n                        \"cnpjRecebedor\": \"33026320000170\"\n                    },\n                    {\n                        \"id\": 8,\n                        \"valor\": 12127,\n                        \"tipoTransacao\": \"PAGAMENTO\",\n                        \"cnpjRecebedor\": \"84203575000100\"\n                    },\n                    {\n                        \"id\": 9,\n                        \"valor\": 123123,\n                        \"tipoTransacao\": \"TRANSFERENCIA\",\n                        \"contaDestino\": \"78787878\",\n                        \"contaOrigem\": \"1231312123\"\n                    },\n                    {\n                        \"id\": 10,\n                        \"valor\": 7867889,\n                        \"tipoTransacao\": \"TRANSFERENCIA\",\n                        \"contaDestino\": \"1111\",\n                        \"contaOrigem\": \"00123\"\n                    },\n                    {\n                        \"id\": 11,\n                        \"valor\": 98989,\n                        \"tipoTransacao\": \"TRANSFERENCIA\",\n                        \"contaDestino\": \"1231231\",\n                        \"contaOrigem\": \"324324\"\n                    },\n                    {\n                        \"id\": 12,\n                        \"valor\": 3436789,\n                        \"tipoTransacao\": \"TRANSFERENCIA\",\n                        \"contaDestino\": \"78786\",\n                        \"contaOrigem\": \"89789\"\n                    }\n                ],\n                \"data\": \"2022-03-31T22:05:33.004773\"\n            }\n        ],\n        \"quantidadeMalotes\": 1,\n        \"transacoes\": [\n            {\n                \"id\": 1,\n                \"valor\": 12321354,\n                \"tipoTransacao\": \"DEPOSITO\",\n                \"cpfBeneficiario\": \"25917576076\",\n                \"nomeBeneficiario\": \"Fulano da Silva\"\n            },\n            {\n                \"id\": 2,\n                \"valor\": 889897,\n                \"tipoTransacao\": \"DEPOSITO\",\n                \"cpfBeneficiario\": \"17794293049\",\n                \"nomeBeneficiario\": \"Orlando Silva\"\n            },\n            {\n                \"id\": 3,\n                \"valor\": 7898090,\n                \"tipoTransacao\": \"DEPOSITO\",\n                \"cpfBeneficiario\": \"01777779073\",\n                \"nomeBeneficiario\": \"Rui da Silva\"\n            },\n            {\n                \"id\": 4,\n                \"valor\": 89765434,\n                \"tipoTransacao\": \"DEPOSITO\",\n                \"cpfBeneficiario\": \"76194308060\",\n                \"nomeBeneficiario\": \"Rodrigo Rodrigues\"\n            },\n            {\n                \"id\": 5,\n                \"valor\": 2300,\n                \"tipoTransacao\": \"PAGAMENTO\",\n                \"cnpjRecebedor\": \"56529545000144\"\n            },\n            {\n                \"id\": 6,\n                \"valor\": 177787,\n                \"tipoTransacao\": \"PAGAMENTO\",\n                \"cnpjRecebedor\": \"93471399000170\"\n            },\n            {\n                \"id\": 7,\n                \"valor\": 8809787,\n                \"tipoTransacao\": \"PAGAMENTO\",\n                \"cnpjRecebedor\": \"33026320000170\"\n            },\n            {\n                \"id\": 8,\n                \"valor\": 12127,\n                \"tipoTransacao\": \"PAGAMENTO\",\n                \"cnpjRecebedor\": \"84203575000100\"\n            },\n            {\n                \"id\": 9,\n                \"valor\": 123123,\n                \"tipoTransacao\": \"TRANSFERENCIA\",\n                \"contaDestino\": \"78787878\",\n                \"contaOrigem\": \"1231312123\"\n            },\n            {\n                \"id\": 10,\n                \"valor\": 7867889,\n                \"tipoTransacao\": \"TRANSFERENCIA\",\n                \"contaDestino\": \"1111\",\n                \"contaOrigem\": \"00123\"\n            },\n            {\n                \"id\": 11,\n                \"valor\": 98989,\n                \"tipoTransacao\": \"TRANSFERENCIA\",\n                \"contaDestino\": \"1231231\",\n                \"contaOrigem\": \"324324\"\n            },\n            {\n                \"id\": 12,\n                \"valor\": 3436789,\n                \"tipoTransacao\": \"TRANSFERENCIA\",\n                \"contaDestino\": \"78786\",\n                \"contaOrigem\": \"89789\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"cnpj\": \"00556585000120\",\n        \"nome\": \"X-Devs\",\n        \"malotes\": [],\n        \"quantidadeMalotes\": 0,\n        \"transacoes\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "quantidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/empresa/qtde",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresa",
+								"qtde"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/empresa/qtde",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empresa",
+										"qtde"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:25:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MaloteAPI",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/malote/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"malote",
+								"listar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/malote/listar",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"malote",
+										"listar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:27:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"empresa\": {\n            \"id\": 1,\n            \"cnpj\": \"36178046000142\",\n            \"nome\": \"Ecorp\"\n        },\n        \"usuario\": {\n            \"id\": 2,\n            \"email\": \"fulaninho@gmail.com\",\n            \"nome\": \"Fulano\",\n            \"senha\": \"123\",\n            \"admin\": false,\n            \"aceito\": false\n        },\n        \"quantidadeTransacoes\": 12,\n        \"data\": \"2022-03-31T22:05:33.004773\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "listar por usuário",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/malote/2/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"malote",
+								"2",
+								"listar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "listar por usuário",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/malote/2/listar",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"malote",
+										"2",
+										"listar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:28:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"empresa\": {\n            \"id\": 1,\n            \"cnpj\": \"36178046000142\",\n            \"nome\": \"Ecorp\"\n        },\n        \"usuario\": {\n            \"id\": 2,\n            \"email\": \"fulaninho@gmail.com\",\n            \"nome\": \"Fulano\",\n            \"senha\": \"123\",\n            \"admin\": false,\n            \"aceito\": false\n        },\n        \"quantidadeTransacoes\": 12,\n        \"data\": \"2022-03-31T22:05:33.004773\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "quantidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/malote/qtde",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"malote",
+								"qtde"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quantidade",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/malote/qtde",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"malote",
+										"qtde"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 01:29:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "buscar por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/malote/1/obter",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"malote",
+								"1",
+								"obter"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar por id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/malote/1/obter",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"malote",
+										"1",
+										"obter"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:06:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"empresa\": {\n        \"id\": 1,\n        \"cnpj\": \"36178046000142\",\n        \"nome\": \"Ecorp\"\n    },\n    \"usuario\": {\n        \"id\": 2,\n        \"email\": \"fulaninho@gmail.com\",\n        \"nome\": \"Fulano\",\n        \"senha\": \"123\",\n        \"admin\": false,\n        \"aceito\": false\n    },\n    \"quantidadeTransacoes\": 12,\n    \"data\": \"2022-03-31T22:53:13.586917\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "TransacaoAPI",
+			"item": [
+				{
+					"name": "listar transações",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/transacao/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transacao",
+								"listar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "listar transações",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/transacao/listar",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transacao",
+										"listar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:16:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"valor\": 12321354,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"25917576076\",\n        \"nomeBeneficiario\": \"Fulano da Silva\"\n    },\n    {\n        \"id\": 2,\n        \"valor\": 889897,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"17794293049\",\n        \"nomeBeneficiario\": \"Orlando Silva\"\n    },\n    {\n        \"id\": 3,\n        \"valor\": 7898090,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"01777779073\",\n        \"nomeBeneficiario\": \"Rui da Silva\"\n    },\n    {\n        \"id\": 4,\n        \"valor\": 89765434,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"76194308060\",\n        \"nomeBeneficiario\": \"Rodrigo Rodrigues\"\n    },\n    {\n        \"id\": 5,\n        \"valor\": 2300,\n        \"tipoTransacao\": \"PAGAMENTO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cnpjRecebedor\": \"56529545000144\"\n    },\n    {\n        \"id\": 6,\n        \"valor\": 177787,\n        \"tipoTransacao\": \"PAGAMENTO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cnpjRecebedor\": \"93471399000170\"\n    },\n    {\n        \"id\": 7,\n        \"valor\": 8809787,\n        \"tipoTransacao\": \"PAGAMENTO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cnpjRecebedor\": \"33026320000170\"\n    },\n    {\n        \"id\": 8,\n        \"valor\": 12127,\n        \"tipoTransacao\": \"PAGAMENTO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cnpjRecebedor\": \"84203575000100\"\n    },\n    {\n        \"id\": 9,\n        \"valor\": 123123,\n        \"tipoTransacao\": \"TRANSFERENCIA\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"contaDestino\": \"78787878\",\n        \"contaOrigem\": \"1231312123\"\n    },\n    {\n        \"id\": 10,\n        \"valor\": 7867889,\n        \"tipoTransacao\": \"TRANSFERENCIA\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"contaDestino\": \"1111\",\n        \"contaOrigem\": \"00123\"\n    },\n    {\n        \"id\": 11,\n        \"valor\": 98989,\n        \"tipoTransacao\": \"TRANSFERENCIA\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"contaDestino\": \"1231231\",\n        \"contaOrigem\": \"324324\"\n    },\n    {\n        \"id\": 12,\n        \"valor\": 3436789,\n        \"tipoTransacao\": \"TRANSFERENCIA\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"contaDestino\": \"78786\",\n        \"contaOrigem\": \"89789\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "listar transferências",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/transacao/listar/transferencia",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transacao",
+								"listar",
+								"transferencia"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "listar transferências",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/transacao/listar/transferencia",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transacao",
+										"listar",
+										"transferencia"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:18:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 11,\n        \"valor\": 98989,\n        \"tipoTransacao\": \"TRANSFERENCIA\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"contaDestino\": \"1231231\",\n        \"contaOrigem\": \"324324\"\n    },\n    {\n        \"id\": 9,\n        \"valor\": 123123,\n        \"tipoTransacao\": \"TRANSFERENCIA\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"contaDestino\": \"78787878\",\n        \"contaOrigem\": \"1231312123\"\n    },\n    {\n        \"id\": 12,\n        \"valor\": 3436789,\n        \"tipoTransacao\": \"TRANSFERENCIA\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"contaDestino\": \"78786\",\n        \"contaOrigem\": \"89789\"\n    },\n    {\n        \"id\": 10,\n        \"valor\": 7867889,\n        \"tipoTransacao\": \"TRANSFERENCIA\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"contaDestino\": \"1111\",\n        \"contaOrigem\": \"00123\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "quantidade transferência",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/transacao/qtde/transferencia",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transacao",
+								"qtde",
+								"transferencia"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quantidade transferência",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/transacao/qtde/transferencia",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transacao",
+										"qtde",
+										"transferencia"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:20:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "4"
+						}
+					]
+				},
+				{
+					"name": "listar depósitos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/transacao/listar/deposito",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transacao",
+								"listar",
+								"deposito"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "listar depósitos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/transacao/listar/deposito",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transacao",
+										"listar",
+										"deposito"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:22:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"valor\": 889897,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"17794293049\",\n        \"nomeBeneficiario\": \"Orlando Silva\"\n    },\n    {\n        \"id\": 3,\n        \"valor\": 7898090,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"01777779073\",\n        \"nomeBeneficiario\": \"Rui da Silva\"\n    },\n    {\n        \"id\": 1,\n        \"valor\": 12321354,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"25917576076\",\n        \"nomeBeneficiario\": \"Fulano da Silva\"\n    },\n    {\n        \"id\": 4,\n        \"valor\": 89765434,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"76194308060\",\n        \"nomeBeneficiario\": \"Rodrigo Rodrigues\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "quantidade depósitos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/transacao/listar/deposito",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transacao",
+								"listar",
+								"deposito"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quantidade depósitos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/transacao/listar/deposito",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transacao",
+										"listar",
+										"deposito"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:22:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"valor\": 889897,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"17794293049\",\n        \"nomeBeneficiario\": \"Orlando Silva\"\n    },\n    {\n        \"id\": 3,\n        \"valor\": 7898090,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"01777779073\",\n        \"nomeBeneficiario\": \"Rui da Silva\"\n    },\n    {\n        \"id\": 1,\n        \"valor\": 12321354,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"25917576076\",\n        \"nomeBeneficiario\": \"Fulano da Silva\"\n    },\n    {\n        \"id\": 4,\n        \"valor\": 89765434,\n        \"tipoTransacao\": \"DEPOSITO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cpfBeneficiario\": \"76194308060\",\n        \"nomeBeneficiario\": \"Rodrigo Rodrigues\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "quantidade depósito",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/transacao/qtde/deposito",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transacao",
+								"qtde",
+								"deposito"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quantidade depósito",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/transacao/qtde/deposito",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transacao",
+										"qtde",
+										"deposito"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:23:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "4"
+						}
+					]
+				},
+				{
+					"name": "listar pagamento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/transacao/listar/pagamento",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transacao",
+								"listar",
+								"pagamento"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "listar pagamento",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/transacao/listar/pagamento",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transacao",
+										"listar",
+										"pagamento"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:24:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"valor\": 2300,\n        \"tipoTransacao\": \"PAGAMENTO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cnpjRecebedor\": \"56529545000144\"\n    },\n    {\n        \"id\": 8,\n        \"valor\": 12127,\n        \"tipoTransacao\": \"PAGAMENTO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cnpjRecebedor\": \"84203575000100\"\n    },\n    {\n        \"id\": 6,\n        \"valor\": 177787,\n        \"tipoTransacao\": \"PAGAMENTO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cnpjRecebedor\": \"93471399000170\"\n    },\n    {\n        \"id\": 7,\n        \"valor\": 8809787,\n        \"tipoTransacao\": \"PAGAMENTO\",\n        \"malote\": {\n            \"id\": 1,\n            \"data\": \"2022-03-31T22:53:13.586917\"\n        },\n        \"cnpjRecebedor\": \"33026320000170\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "quantidade pagamento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/transacao/qtde/pagamento",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transacao",
+								"qtde",
+								"pagamento"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quantidade pagamento",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/transacao/qtde/pagamento",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transacao",
+										"qtde",
+										"pagamento"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:25:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "UsuariosAPI",
+			"item": [
+				{
+					"name": "listar usuários",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/usuario/listar",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"usuario",
+								"listar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "listar usuários",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8083/usuario/listar",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"usuario",
+										"listar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Apr 2022 02:29:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"email\": \"beltrano@gmail.com\",\n        \"nome\": \"Beltrano\",\n        \"senha\": \"123\",\n        \"admin\": false,\n        \"empresa\": {\n            \"id\": 1,\n            \"cnpj\": \"36178046000142\",\n            \"nome\": \"Ecorp\"\n        },\n        \"aceito\": false,\n        \"quantidadeMalotes\": 0\n    },\n    {\n        \"id\": 4,\n        \"email\": \"danielle@gmail.com\",\n        \"nome\": \"Danielle\",\n        \"senha\": \"123\",\n        \"admin\": false,\n        \"empresa\": {\n            \"id\": 1,\n            \"cnpj\": \"36178046000142\",\n            \"nome\": \"Ecorp\"\n        },\n        \"aceito\": false,\n        \"quantidadeMalotes\": 0\n    },\n    {\n        \"id\": 1,\n        \"email\": \"admin@admin.com\",\n        \"nome\": \"Elberth\",\n        \"senha\": \"123\",\n        \"admin\": true,\n        \"empresa\": {\n            \"id\": 1,\n            \"cnpj\": \"36178046000142\",\n            \"nome\": \"Ecorp\"\n        },\n        \"aceito\": false,\n        \"quantidadeMalotes\": 0\n    },\n    {\n        \"id\": 2,\n        \"email\": \"fulaninho@gmail.com\",\n        \"nome\": \"Fulano\",\n        \"senha\": \"123\",\n        \"admin\": false,\n        \"empresa\": {\n            \"id\": 1,\n            \"cnpj\": \"36178046000142\",\n            \"nome\": \"Ecorp\"\n        },\n        \"aceito\": false,\n        \"quantidadeMalotes\": 1\n    },\n    {\n        \"id\": 6,\n        \"email\": \"lenon@gmail.com\",\n        \"nome\": \"Lenon\",\n        \"senha\": \"123\",\n        \"admin\": false,\n        \"empresa\": {\n            \"id\": 1,\n            \"cnpj\": \"36178046000142\",\n            \"nome\": \"Ecorp\"\n        },\n        \"aceito\": false,\n        \"quantidadeMalotes\": 0\n    },\n    {\n        \"id\": 3,\n        \"email\": \"rodrigo@gmail.com\",\n        \"nome\": \"Rodrigo\",\n        \"senha\": \"123\",\n        \"admin\": false,\n        \"empresa\": {\n            \"id\": 1,\n            \"cnpj\": \"36178046000142\",\n            \"nome\": \"Ecorp\"\n        },\n        \"aceito\": false,\n        \"quantidadeMalotes\": 0\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
